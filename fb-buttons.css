@@ -4,7 +4,6 @@ MIT License
 http://github.com/necolas/css3-facebook-buttons
 ------------------------------------------ */
 
-
 /* ------------------------------------------------------------------------------------------------------------- BUTTON */
 
 .uibutton,
@@ -65,18 +64,34 @@ http://github.com/necolas/css3-facebook-buttons
     content: "";
     position: relative;
     top: 1px;
-    float:left;
+    float: left;
     width: 10px;
     height: 12px;
     margin: 0 0.5em 0 0;
     background: url(fb-icons.png) 99px 99px no-repeat;
 }
 
-.uibutton.edit:before  { background-position: 0 0; }
-.uibutton.add:before  { background-position: -10px 0; }
-.uibutton.secure:before  { background-position: -20px 0; }
-.uibutton.prev:before  { background-position: -30px 0; }
-.uibutton.next:before  { float:right; margin: 0 -0.25em 0 0.5em; background-position: -40px 0; }
+.uibutton.edit:before {
+    background-position: 0 0;
+}
+
+.uibutton.add:before {
+    background-position: -10px 0;
+}
+
+.uibutton.secure:before {
+    background-position: -20px 0;
+}
+
+.uibutton.prev:before {
+    background-position: -30px 0;
+}
+
+.uibutton.next:before {
+    float: right;
+    margin: 0 -0.25em 0 0.5em;
+    background-position: -40px 0;
+}
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON EXTENSIONS */
 
@@ -199,7 +214,7 @@ http://github.com/necolas/css3-facebook-buttons
 .uibutton-group .uibutton:hover,
 .uibutton-group .uibutton:focus,
 .uibutton-group .uibutton:active {
-    z-index:2;
+    z-index: 2;
 }
 
 .uibutton-group > .uibutton:first-child,
@@ -219,4 +234,12 @@ http://github.com/necolas/css3-facebook-buttons
 .uibutton-toolbar .uibutton,
 .uibutton-toolbar .uibutton-group {
     vertical-align: bottom;
+}
+
+body {
+    padding: 20px;
+}
+
+a:visited {
+    color: red;
 }
